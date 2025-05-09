@@ -6,9 +6,9 @@ import requests
 url = 'https://github.com/Kanda-com/Heart_D_Model/blob/main/naive_model_trained.sav'
 loaded_model = requests.get(url)
 
-with open('trained_model1.sav', 'wb') as f:
+with open('naive_trained_model.sav', 'wb') as f:
     pickle.dump(loaded_model, f)
-with open('trained_model1.sav', 'rb') as f:
+with open('naive_trained_model.sav', 'rb') as f:
     loaded_model = pickle.load(f)
     
 def hearth_disease_prediction(input_data):
