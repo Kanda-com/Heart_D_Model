@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 import pandas as pd
 import requests
-url = 'https://github.com/Kanda-com/Heart_D_Model/blob/main/naive_model_trained%20(1).sav'
+url = 'https://github.com/Kanda-com/Heart_D_Model/blob/main/naive_model_trained.sav'
 loaded_model = requests.get(url)
 
 with open('trained_model1.sav', 'wb') as f:
