@@ -40,5 +40,5 @@ def main():
         diagnosis = hearth_disease_prediction([age,sex,Chest_Pain,Blood_Pressure,cholestoral])
         st.success(diagnosis)
 
-    if __name__ == '__main__':
-        main()
+if __name__ == '__main__':
+    main()
