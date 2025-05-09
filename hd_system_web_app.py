@@ -22,7 +22,7 @@ def hearth_disease_prediction(input_data):
         return "The person has heart disease"
 def main():
     st.title("Heart Disease Prediction Machine Learning Model")
-    age = st.text_imput("Enter the patient's Age 15-80 ")
+    age = st.text_input("Enter the patient's Age 15-80 ")
     sex = st.text_input("Enter the patient's Gender (0[F],1[M])")
     Chest_Pain = st.text_input("Chest Pain Level(1,2 or 3)")
     Blood_Pressure = st.text_input("The Blood Pressure(mm hg)level (94-200)")
