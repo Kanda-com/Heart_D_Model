@@ -29,6 +29,7 @@ def main():
     cholestoral = st.text_input("Cholestoral level(mg/dl) (131 - 290)")
     Fasting_Blood_Sugar = st.text_input("Fasting_Blood_Sugar (1, or 0)")
     resting_electrocardiographic = st.text_input("resting_electrocardiographic((1 or 0)")
+    Diagnosis_of_Heart_Disease = st.text_input("Diagnosis_of_Heart_Disease((1 or 0)")
     
     age = pd.to_numeric(age, errors='coerce')
     sex = pd.to_numeric(sex, errors='coerce')
@@ -37,6 +38,7 @@ def main():
     cholestoral =pd.to_numeric(cholestoral, errors='coerce')
     Fasting_Blood_Sugar =pd.to_numeric(Fasting_Blood_Sugar, errors='coerce')
     resting_electrocardiographic =pd.to_numeric( resting_electrocardiographic, errors='coerce')
+    Diagnosis_of_Heart_Disease =pd.to_numeric( Diagnosis_of_Heart_Disease, errors='coerce')
     diagnosis = ''
     
     if  st.button("PREDICT"):
