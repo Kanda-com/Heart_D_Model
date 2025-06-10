@@ -27,8 +27,8 @@ def main():
     Chest_Pain = st.text_input("Chest Pain Level(1,2 or 3)")
     Blood_Pressure = st.text_input("The Blood Pressure(mm hg)level (94-200)")
     cholestoral = st.text_input("Cholestoral level(mg/dl) (131 - 290)")
-    Fasting_Blood_Sugar = st.text_input("Fasting_Blood_Sugar(mg/dl) (131 - 290)")
-    resting electrocardiographic = st.text_input("resting electrocardiographic(mg/dl) (131 - 290)")
+    Fasting_Blood_Sugar = st.text_input("Fasting_Blood_Sugar (1, or 0)")
+    resting electrocardiographic = st.text_input("resting electrocardiographic((1 or 0)")
     
     age = pd.to_numeric(age, errors='coerce')
     sex = pd.to_numeric(sex, errors='coerce')
