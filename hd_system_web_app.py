@@ -27,13 +27,16 @@ def main():
     Chest_Pain = st.text_input("Chest Pain Level(1,2 or 3)")
     Blood_Pressure = st.text_input("The Blood Pressure(mm hg)level (94-200)")
     cholestoral = st.text_input("Cholestoral level(mg/dl) (131 - 290)")
+    Fasting_Blood_Sugar = st.text_input("Fasting_Blood_Sugar(mg/dl) (131 - 290)")
+    resting electrocardiographic = st.text_input("resting electrocardiographic(mg/dl) (131 - 290)")
     
     age = pd.to_numeric(age, errors='coerce')
     sex = pd.to_numeric(sex, errors='coerce')
     Chest_Pain = pd.to_numeric(Chest_Pain, errors='coerce')
     Blood_Pressure =pd.to_numeric(Blood_Pressure, errors='coerce')
     cholestoral =pd.to_numeric(cholestoral, errors='coerce')
-    
+    Fasting_Blood_Sugar =pd.to_numeric(Fasting_Blood_Sugar, errors='coerce')
+    resting electrocardiographic =pd.to_numeric( resting electrocardiographic, errors='coerce')
     diagnosis = ''
     
     if  st.button("PREDICT"):
